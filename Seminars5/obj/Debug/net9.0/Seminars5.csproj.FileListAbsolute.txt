@@ -1,0 +1,14 @@
+/Users/halidsaraliev/Desktop/HomeWork/Seminars5/bin/Debug/net9.0/Seminars5
+/Users/halidsaraliev/Desktop/HomeWork/Seminars5/bin/Debug/net9.0/Seminars5.deps.json
+/Users/halidsaraliev/Desktop/HomeWork/Seminars5/bin/Debug/net9.0/Seminars5.runtimeconfig.json
+/Users/halidsaraliev/Desktop/HomeWork/Seminars5/bin/Debug/net9.0/Seminars5.dll
+/Users/halidsaraliev/Desktop/HomeWork/Seminars5/bin/Debug/net9.0/Seminars5.pdb
+/Users/halidsaraliev/Desktop/HomeWork/Seminars5/obj/Debug/net9.0/Seminars5.GeneratedMSBuildEditorConfig.editorconfig
+/Users/halidsaraliev/Desktop/HomeWork/Seminars5/obj/Debug/net9.0/Seminars5.AssemblyInfoInputs.cache
+/Users/halidsaraliev/Desktop/HomeWork/Seminars5/obj/Debug/net9.0/Seminars5.AssemblyInfo.cs
+/Users/halidsaraliev/Desktop/HomeWork/Seminars5/obj/Debug/net9.0/Seminars5.csproj.CoreCompileInputs.cache
+/Users/halidsaraliev/Desktop/HomeWork/Seminars5/obj/Debug/net9.0/Seminars5.dll
+/Users/halidsaraliev/Desktop/HomeWork/Seminars5/obj/Debug/net9.0/refint/Seminars5.dll
+/Users/halidsaraliev/Desktop/HomeWork/Seminars5/obj/Debug/net9.0/Seminars5.pdb
+/Users/halidsaraliev/Desktop/HomeWork/Seminars5/obj/Debug/net9.0/Seminars5.genruntimeconfig.cache
+/Users/halidsaraliev/Desktop/HomeWork/Seminars5/obj/Debug/net9.0/ref/Seminars5.dll
