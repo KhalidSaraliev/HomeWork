@@ -1,15 +1,11 @@
-﻿int[] array1 = {1,8,4,19,5};
-int digit = 20;
+﻿int[] arr = { 3, 6, 11, 25, 78, 32, 4, 9, 86, 75 };
+int index = 0;
+int count = 0;
 
-bool isExistNum = false;
-
-for (int i = 0; i < array1.Length; i++)
+while(index < arr.Length)
 {
-    if( array1[i] == digit)
-    {
-        isExistNum = true;
-        break;
-    }
+    if(arr[index] > 9 && arr[index]<=90)
+    count++;
+    index++;
 }
-//string result = isExistNum ? "Да" : "Нет";
-Console.WriteLine(isExistNum ? "Да" : "Нет");
+Console.WriteLine(count);
