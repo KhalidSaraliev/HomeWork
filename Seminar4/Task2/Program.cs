@@ -1,8 +1,9 @@
-﻿// Задайте одномерный массив, заполненный случайными числами. 
-// Определите количество простых чисел в массиве.
-// Примеры
-// [1 3 4 19 2] => 2
-// [4 3 4 1 9 5 21 13] => 3
+﻿// Задайте массив из N случайных целых чисел (N вводится с
+// клавиатуры).
+// Найдите количество чисел, которые оканчиваются на 1 и
+// делятся нацело на 7.
+// Пример
+// [1 5 11 21 81 4 0 91 2 3] => 2
 
 int[] CreateArrayRndInt(int size, int min, int max)
 {
@@ -34,13 +35,12 @@ void PrintArray(int [] array)
     Console.Write(']');
 }
 
-int CountPrimeNimbers(int[] array)
+int CountNumLastADevB(int[] array, int aLast, int bDev)
 {
     int count = 0;
-
     for (int i = 0; i < array.Length; i++)
     {
-        if (IsPrime(array[i]))
+        if(array[i] % 10 == aLast && array[i] % bDev == 0)
         {
             count++;
         }
@@ -48,19 +48,9 @@ int CountPrimeNimbers(int[] array)
     return count;
 }
 
-bool IsPrime(int num)
-{
-    for (int i = 2; i <= Math.Sqrt(num); i++)
-    {
-       if (num % i == 0)
-       {
-        return false;
-       } 
-    }
-    return true;
-}
-int [] arr = CreateArrayRndInt(10,1,100);
+Console.WriteLine("Задайте размер массива: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int[] arr = CreateArrayRndInt(n,1,100);
 PrintArray(arr);
-
-int CountPrime = CountPrimeNimbers(arr);
-Console.WriteLine($" => {CountPrime}");
+int result = CountNumLastADevB(arr,1,7);
+Console.Write($"=> {result}");
