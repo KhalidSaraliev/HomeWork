@@ -1,59 +1,31 @@
 ﻿while (true)
 {
-    string input = ReadInput();;
+    Console.Write("Введите число или 'q' для выхода: ");
+    string n = Console.ReadLine();
 
-    if (IsExitCommand(input))
+    if (n == "q")
     {
         break;
     }
 
-    if (IsNumber(input))
+    int number = 0;
+    if (int.TryParse(n, out number))
     {
-        int number = Convert.ToInt32(input);
-        if(IsSumOfDigitsEven(number))
+        int sum = 0;
+        while (number > 0)
         {
-            Console.WriteLine("Сумма цифр числа четная. Программа завершает работу.");
+            sum+= number % 10; //Добавление последней цифры к сумме
+            number /= 10; // Удаление последней цифры из числа
+        }
+
+        if (sum % 2 == 0)
+        {
+            Console.WriteLine("[STOP]");
             break;
         }
     }
     else
     {
-        Console.WriteLine("Введено не целое число. Попробуйте снова.");
+        Console.WriteLine("Некорректный ввод. Пожалуйста введите целое число или 'q' ");
     }
-}
-
-string ReadInput()
-{
-    Console.Write("Введите целое число или 'q' для выхода: ");
-    return Console.ReadLine();
-}
-
-bool IsExitCommand(string input)
-{
-    return input.ToLower() == "q";
-}
-
-bool IsNumber(string input)
-{
-    foreach(char c in input)
-    {
-        if (!char.IsDigit(c) && c != '-')
-        {
-            return false;
-        }
-    }
-    return true;
-}
-
-bool IsSumOfDigitsEven(int number)
-{
-    int sumOfDigits = 0;
-    int temp = Math.Abs(number);
-
-    while (temp != 0)
-    {
-        sumOfDigits += temp % 10;
-        temp /= 10;
-    }
-    return sumOfDigits % 2 == 0;
 }
